@@ -1,57 +1,20 @@
+# Pedestrian Detection with OpenCV
 
-# 🚶 Pedestrian Detection System
-سیستم تشخیص عابر پیاده با استفاده از **Python + OpenCV**.  
-قادر به پردازش تصویر و ویدیو و نمایش تعداد عابرهای تشخیص داده‌شده.
+A Python computer vision prototype using a Haar cascade to detect pedestrians in images and videos.
 
----
+## Features
+- Image and video input through a command-line argument.
+- Grayscale preprocessing and cascade-based detection.
+- Bounding boxes and detection counts.
 
-## ✨ ویژگی‌ها
-- تشخیص عابر در تصویر و ویدیو  
-- سرعت بالا  
-- مناسب برای پروژه‌های AI و CV  
-- نمایش تعداد افراد تشخیص داده‌شده
+## Local setup
+Install OpenCV with `pip install opencv-python`. Supply a compatible `haarcascade_fullbody.xml` file at `models/haarcascade_fullbody.xml` (not included in this repository).
 
----
-
-## 🧰 تکنولوژی‌ها
-- Python  
-- OpenCV  
-- Haar Cascade
-
----
-
-## 📁 ساختار پروژه
-```
-pedestrian_detection/
-│── src/
-│ ├── detect.py
-│── models/
-│ ├── haarcascade_fullbody.xml
-│── samples/
-│ ├── sample1.jpg
-│ ├── sample2.mp4
-│── README.md
-```
-
----
-
-## 🚀 نحوه اجرا
 ```bash
-python src/detect.py --input samples/sample2.mp4
+python detect.py --input path/to/video.mp4
 ```
 
----
+Press `q` to exit video playback. A graphical environment is required.
 
-## 📸 خروجی نمونه
-- نمایش مستطیل سبز روی عابر  
-- شمارش افراد در گوشه تصویر
-
----
-
-## 🤝 مشارکت
-Issue و PR پذیرفته می‌شود.
-
----
-
-## 📄 License
-MIT License
+## Status
+Educational prototype; accuracy and runtime performance have not been benchmarked.
